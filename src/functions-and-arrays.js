@@ -1,19 +1,49 @@
 // Iteration #1: Find the maximum
-function maxOfTwoNumbers() {}
+function maxOfTwoNumbers(num1, num2) {
+  if (num1 > num2){
+    return num1
+  } else {
+    return num2
+  }
+}
 
 
 
 // Iteration #2: Find longest word
 const words = ['mystery', 'brother', 'aviator', 'crocodile', 'pearl', 'orchard', 'crackpot'];
 
-function findLongestWord() {}
+function findLongestWord(words) {
+ if(words.length === 0)
+ return null
 
+ let longestWord = "";
+ for(let i = 0; i < words.length; i++){
+   if(longestWord.length < words[i].length){
+    longestWord = words[i]
+   }
+  
+ }
+ return longestWord
+}
 
+console.log(findLongestWord(words))
 
 // Iteration #3: Calculate the sum
 const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 
-function sumNumbers() {}
+function sumNumbers(num) {
+    if(num.length === 0){
+      return 0
+    } else {
+      let total = 0;
+      for(let i = 0; i < num.length; i++){
+        total = total + num[i]
+      }
+      return total
+    }
+
+
+}
 
 
 
@@ -32,7 +62,19 @@ function averageNumbers() {}
 // Level 2: Array of strings
 const wordsArr = ['seat', 'correspond', 'linen', 'motif', 'hole', 'smell', 'smart', 'chaos', 'fuel', 'palace'];
 
-function averageWordLength() { }
+function averageWordLength(newArr) {
+  if(arr.length === 0){
+    return 0
+  }
+  let sum = 0
+  if (newArr.length === 0){
+    return 0
+  }
+  for (let i = 0; i < newArr.length; i++){
+    sum = sum + newArr[i]
+  }
+  return ( sum / newArr.length)
+ }
 
 // Bonus - Iteration #4.1
 function avg() {}
@@ -52,14 +94,30 @@ const wordsUnique = [
   'bring'
 ];
 
-function uniquifyArray() {}
+function uniquifyArray(words) {
+  let newArr = [];
+  if (words.length === 0){
+    return null
+  }
+  for(let i = 0; i < words.length; i++){
+    if (newArr.indexOf(words[i]) == -1){
+      newArr.push(words[i])
+    }
+  }
+  return newArr
+}
 
 
 
 // Iteration #6: Find elements
 const wordsFind = ['machine', 'subset', 'trouble', 'starting', 'matter', 'eating', 'truth', 'disobedience'];
 
-function doesWordExist() {}
+function doesWordExist(findWord,word) {
+    if(findWord.length === 0){
+      return null
+    }
+    let wordFound
+}
 
 
 
